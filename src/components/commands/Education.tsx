@@ -21,7 +21,7 @@ const eduBg = [
     desc: "Paris-Saclay University (UVSQ) | 2024 ~ Present",
   },
   {
-    title: "Engineering degree in Computer Science, Intelligent Systems and Data option.",
+    title: "Engineering degree in Computer Science, option: Intelligent Systems and Data.",
     desc: "Higher School of Computer Science in Algeria (ESI) | 2019 ~ 2024",
   }
 ];
