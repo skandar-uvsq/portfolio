@@ -33,7 +33,7 @@ export const commands: Command = [
   { cmd: "projects", desc: "view projects that I've coded", tab: 5 },
   { cmd: "email", desc: "send an email to me", tab: 8 },
   // { cmd: "gui", desc: "go to my portfolio in GUI", tab: 10 },
-  { cmd: "socials", desc: "check out my social accounts", tab: 6 },
+  { cmd: "links", desc: "check out my social accounts", tab: 6 },
   { cmd: "themes", desc: "check available themes", tab: 7 },
   { cmd: "welcome", desc: "display hero section", tab: 6 },
   { cmd: "history", desc: "view command history", tab: 6 },

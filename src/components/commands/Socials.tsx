@@ -18,8 +18,8 @@ const Socials: React.FC = () => {
 
   /* ===== check current command makes redirect ===== */
   useEffect(() => {
-    if (checkRedirect(rerender, currentCommand, "socials")) {
-      socials.forEach(({ id, url }) => {
+    if (checkRedirect(rerender, currentCommand, "links")) {
+      links.forEach(({ id, url }) => {
         id === parseInt(arg[1]) && window.open(url, "_blank");
       });
     }
@@ -28,27 +28,27 @@ const Socials: React.FC = () => {
   /* ===== check arg is valid ===== */
   const checkArg = () =>
     isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
-      <Usage cmd="socials" />
+      <Usage cmd="links" />
     ) : null;
 
   return arg.length > 0 || arg.length > 2 ? (
     checkArg()
   ) : (
     <HelpWrapper data-testid="socials">
-      <ProjectsIntro>Here are my social links</ProjectsIntro>
-      {socials.map(({ id, title, url, tab }) => (
+      <ProjectsIntro>Here are some useful links</ProjectsIntro>
+      {links.map(({ id, title, url, tab }) => (
         <CmdList key={title}>
           <Cmd>{`${id}. ${title}`}</Cmd>
           {generateTabs(tab)}
           <CmdDesc>- {url}</CmdDesc>
         </CmdList>
       ))}
-      <Usage cmd="socials" marginY />
+      <Usage cmd="links" marginY />
     </HelpWrapper>
   );
 };
 
-const socials = [
+const links = [
   {
     id: 1,
     title: "gitHub",

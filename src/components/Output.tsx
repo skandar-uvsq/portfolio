@@ -23,7 +23,7 @@ type Props = {
 const Output: React.FC<Props> = ({ index, cmd }) => {
   const { arg } = useContext(termContext);
 
-  const specialCmds = ["projects", "socials", "themes", "echo"];
+  const specialCmds = ["projects", "links", "themes", "echo"];
 
   // return 'Usage: <cmd>' if command arg is not valid
   // eg: about tt
@@ -44,7 +44,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           history: <History />,
           projects: <Projects />,
           pwd: <GeneralOutput>/home/satnaing</GeneralOutput>,
-          socials: <Socials />,
+          links: <Socials />,
           themes: <Themes />,
           welcome: <Welcome />,
           whoami: <GeneralOutput>visitor</GeneralOutput>,
