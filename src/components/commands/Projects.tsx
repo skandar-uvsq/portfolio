@@ -20,16 +20,19 @@ const Projects: React.FC = () => {
   /* ===== get current command ===== */
   const currentCommand = getCurrentCmdArry(history);
 
+
+
   /* ===== check current command is redirect ===== */
   useEffect(() => {
     if (checkRedirect(rerender, currentCommand, "projects")) {
+      alert(rerender)
       projects.forEach(({ id, url }) => {
         if (url) {
           id === parseInt(arg[1]) && window.open(url, "_blank");
         }
       });
     }
-  }, [arg, rerender, currentCommand]);
+  }, [rerender]);
 
   /* ===== check arg is valid ===== */
   const checkArg = () =>
