@@ -15,6 +15,7 @@ import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 import { useContext } from "react";
 import Experience from "./commands/Experience";
+import Skills from "./commands/skills";
 
 type Props = {
   index: number;
@@ -38,6 +39,7 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           about: <About />,
           clear: <Clear />,
           echo: <Echo />,
+          skills: <Skills />,
           education: <Education />,
           email: <Email />,
           gui: <Gui />,

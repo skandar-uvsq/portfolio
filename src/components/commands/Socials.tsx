@@ -28,8 +28,8 @@ const Socials: React.FC = () => {
 
   /* ===== check arg is valid ===== */
   const checkArg = () =>
-    isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
-      <InvalidArg max_valid_arg={4} />
+    isArgInvalid(arg, "go", ["1", "2", "3", "4", "5"]) ? (
+      <InvalidArg max_valid_arg={5} />
     ) : null;
 
   return arg.length > 0 || arg.length > 2 ? (
@@ -70,6 +70,12 @@ const links = [
   },
   {
     id: 4,
+    title: "medium",
+    url: "https://medium.com/@skandarchahbouni",
+    tab: 10,
+  },
+  {
+    id: 5,
     title: "cloudskillsboost",
     url: "https://www.cloudskillsboost.google/public_profiles/f6b52e17-c9e2-4fcb-bdc7-3329e8aeeb4f",
     tab: 0,

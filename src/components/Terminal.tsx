@@ -30,6 +30,7 @@ export const commands: Command = [
   { cmd: "about", desc: "about Chahbouni Skandar!", tab: 8 },
   { cmd: "education", desc: "my education background", tab: 4 },
   { cmd: "experience", desc: "overview of my professional experience and skills acquired", tab: 3 },
+  { cmd: "skills", desc: "overview of my technical and interpersonal skills", tab: 3 },
   { cmd: "projects", desc: "view projects that I've coded", tab: 5 },
   // { cmd: "gui", desc: "go to my portfolio in GUI", tab: 10 },
   { cmd: "links", desc: "check out my social accounts", tab: 8 },
