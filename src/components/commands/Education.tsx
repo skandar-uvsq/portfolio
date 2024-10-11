@@ -17,7 +17,7 @@ const Education: React.FC = () => {
 
 const eduBg = [
   {
-    title: "Master 2 student, option: Data Management in Large-Scale Distributed Systems",
+    title: "Master 2 student, option: Data Management in Large-Scale Distributed Systems.",
     desc: "Paris-Saclay University (UVSQ) | 2024 ~ Present",
   },
   {
