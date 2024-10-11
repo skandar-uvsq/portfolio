@@ -15,7 +15,7 @@ import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 import { useContext } from "react";
 import Experience from "./commands/Experience";
-import Skills from "./commands/skills";
+import Skills from "./commands/Skills";
 
 type Props = {
   index: number;
