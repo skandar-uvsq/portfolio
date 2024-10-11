@@ -12,6 +12,7 @@ import {
 } from "../styles/Projects.styled";
 import { termContext } from "../Terminal";
 import Usage from "../Usage";
+import InvalidArg from "../InvalidArg";
 
 const Projects: React.FC = () => {
   const { arg, history, rerender } = useContext(termContext);
@@ -32,8 +33,8 @@ const Projects: React.FC = () => {
 
   /* ===== check arg is valid ===== */
   const checkArg = () =>
-    isArgInvalid(arg, "go", ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]) ? (
-      <Usage cmd="projects" />
+    isArgInvalid(arg, "go", ["1", "2", "3", "4", "5", "6", "7", "8", "9"]) ? (
+      <InvalidArg max_valid_arg={9} />
     ) : null;
 
   return arg.length > 0 || arg.length > 2 ? (

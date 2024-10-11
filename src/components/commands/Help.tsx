@@ -19,8 +19,8 @@ const Help: React.FC = () => {
         </CmdList>
       ))}
       <KeyContainer>
-        <div>Up Arrow {generateTabs(5)} =&gt; go back to previous command</div>
-        <div>Ctrl + l {generateTabs(5)} =&gt; clear the terminal</div>
+        <div>⬆️Up Arrow {generateTabs(3)} =&gt; go back to previous command</div>
+        <div>✅Ctrl + l {generateTabs(3)} =&gt; clear the terminal</div>
       </KeyContainer>
     </HelpWrapper>
   );

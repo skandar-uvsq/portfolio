@@ -14,6 +14,7 @@ import Themes from "./commands/Themes";
 import { OutputContainer, UsageDiv } from "./styles/Output.styled";
 import { termContext } from "./Terminal";
 import { useContext } from "react";
+import Experience from "./commands/Experience";
 
 type Props = {
   index: number;
@@ -41,9 +42,10 @@ const Output: React.FC<Props> = ({ index, cmd }) => {
           email: <Email />,
           gui: <Gui />,
           help: <Help />,
+          experience: <Experience />,
           history: <History />,
           projects: <Projects />,
-          pwd: <GeneralOutput>/home/satnaing</GeneralOutput>,
+          pwd: <GeneralOutput>/home/skandarchahbouni</GeneralOutput>,
           links: <Socials />,
           themes: <Themes />,
           welcome: <Welcome />,

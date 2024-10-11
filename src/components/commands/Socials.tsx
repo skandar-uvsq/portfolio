@@ -9,6 +9,7 @@ import {
 } from "../../utils/funcs";
 import { termContext } from "../Terminal";
 import Usage from "../Usage";
+import InvalidArg from "../InvalidArg";
 
 const Socials: React.FC = () => {
   const { arg, history, rerender } = useContext(termContext);
@@ -28,7 +29,7 @@ const Socials: React.FC = () => {
   /* ===== check arg is valid ===== */
   const checkArg = () =>
     isArgInvalid(arg, "go", ["1", "2", "3", "4"]) ? (
-      <Usage cmd="links" />
+      <InvalidArg max_valid_arg={4} />
     ) : null;
 
   return arg.length > 0 || arg.length > 2 ? (
