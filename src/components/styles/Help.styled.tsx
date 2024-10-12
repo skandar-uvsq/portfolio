@@ -18,7 +18,7 @@ export const CmdDesc = styled.span`
   margin-bottom: 0.75rem;
 
   @media (max-width: 550px) {
-    display: block;
+    display: none;
   }
 `;
 

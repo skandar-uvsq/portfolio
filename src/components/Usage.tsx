@@ -8,7 +8,7 @@ type Props = {
 const arg = {
   themes: { placeholder: "theme-name", example: "ubuntu" },
   projects: { placeholder: "project-no", example: "4" },
-  links: { placeholder: "social-no", example: "1" },
+  links: { placeholder: "link-id", example: "1" },
 };
 
 const Usage: React.FC<Props> = ({ cmd, marginY = false }) => {

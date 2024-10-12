@@ -59,7 +59,7 @@ const links = [
   {
     id: 2,
     title: "linkedin",
-    url: "https://www.linkedin.com/in/skandar-ramzi-chahbouni-0a4b5222b/",
+    url: "https://www.linkedin.com/in/skandarchahbouni/",
     tab: 8,
   },
   {

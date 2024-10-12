@@ -6,7 +6,8 @@ export const AboutWrapper = styled.div`
   p {
     margin-top: 0.5rem;
     line-height: 1.5rem;
-  }
+  };
+  max-width: 750px;
 `;
 
 export const HighlightSpan = styled.span`
